@@ -24,15 +24,7 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'DUI' => $this->faker->dui(),
-            'PrimerNombre' => $this->faker->pNombre(),
-            'SegundoNombre' => $this->faker->sNombre(),
-            'PrimerApellido' => $this->faker->pApellido(),
-            'SegundoApellido' => $this->faker->sApellido(),
-            'Fechanac' => $this->faker->fechaNac(),
-            'telefono' => $this->faker->telefono(),
-            'Correo' => $this->faker->correo(),
-            'Direccion' => $this->faker->direccion(),
+            
         ];
     }
 

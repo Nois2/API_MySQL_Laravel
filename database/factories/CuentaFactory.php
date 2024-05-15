@@ -17,7 +17,10 @@ class CuentaFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'ID_Cuenta' => $this->faker->idCuenta(),
+            'DUI_Persona' => $this->faker->duiPersona(),
+            'Saldo' => $this->faker->saldo(),
+            'Estado_cuenta' => $this->faker->estadoCuenta(),
         ];
     }
 }
