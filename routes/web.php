@@ -10,4 +10,7 @@ Route::get('/', function () {
  #estas rutas te muestran el SELECT * FROM persona y SELECT * FROM cuentabancaria
 Route::get('/listaPersonas', [PersonaController::class, 'index']);
 Route::get('/listaCuentas',[CuentaController::class,'index']);
+# ESTA RUTA FUNCIONA PRACTICAMENTE CON SELECT * FROM cuentabancaria where DUI = AL DEL GET
+Route::get('/ObtenerCuentasPorDUIs/{DUI_Persona}', [CuentaController::class, 'ObtenerCuentasPorDUIs']);
+
 
